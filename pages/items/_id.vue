@@ -103,6 +103,7 @@ export default {
                 combinedPrice: this.combinedPrice
             }
             this.cartSubmitted = true;
+            this.$store.commit('addToCart', formOutput);
             
         }
     },
